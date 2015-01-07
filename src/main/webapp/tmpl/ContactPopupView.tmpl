@@ -1,0 +1,27 @@
+<script id="ContactPopupView" type="text/html">
+<div class="ContactPopupView">
+	<div class="modal">
+		<div class="modal-dialog">
+			<div class= "modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Add Contact</div>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label">Name:</label>
+						<input class="form-control name" type="text" value={{name}}>
+					</div>
+					<div class="form-group">
+						<label class="control-label">Address:</label>
+						<input class="form-control address" type="text" value={{address}}>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default cancel">Cancel</button>
+					<button type="button" class="btn btn-primary create">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</script>

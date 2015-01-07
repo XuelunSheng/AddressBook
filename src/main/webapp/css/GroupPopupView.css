@@ -1,0 +1,17 @@
+.GroupPopupView .modal {
+  width: 360px;
+  top: 420px;
+  left: 760px;
+}
+.GroupPopupView .modal .modal-header {
+  background-color: #555;
+  color: #eee;
+}
+.GroupPopupView .modal .control-label {
+  display: inline-block;
+}
+.GroupPopupView .modal input {
+  display: inline-block;
+  margin-left: 20px;
+}
+

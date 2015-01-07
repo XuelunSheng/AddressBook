@@ -1,0 +1,19 @@
+.ContactPopupView .modal {
+  width: 360px;
+  top: 420px;
+  left: 760px;
+}
+.ContactPopupView .modal .control-label {
+  width: 80px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.ContactPopupView .modal .modal-header {
+  background-color: #555;
+  color: #eee;
+}
+.ContactPopupView .modal input {
+  display: inline-block;
+  margin-left: 20px;
+}
+

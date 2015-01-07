@@ -1,0 +1,39 @@
+<script id="MainView" type="text/html">
+	<div class="MainView">
+		<div class="MainView-nav">
+			<h2>Address Book</h2>
+			<button type="button" class="btn btn-default add-group">Add Group</button>
+			<button type="button" class="btn btn-default add-contact">Add Contact</button>
+		</div>
+
+		<div class="MainView-content">
+		</div>
+	</div>
+</script>
+
+<script id="group-items" type="text/html">
+	<div class="group-ctn" data-entity="group" data-entity-id={{id}}>
+		<div class="group-title">{{title}}
+			<a class="btn btn-default delete-group">Delete</a>
+			<a class="btn btn-info add-contact">Add Contact</a>
+		</div>
+		<div class="contact-title">
+			<div class="contactId info">ID</div>
+			<div class="contactName info">Name</div>
+			<div class="address info">Address</div>
+			<div class="edit info"></div>
+			<div class="delete info"></div>
+		</div>
+		<div class="contact-info">
+
+		</div>
+	</div>
+</script>
+
+<script id="contact-items" type="text/html">
+	<div class="contactId info">{{id}}</div>
+	<div class="contactName info">{{name}}</div>
+	<div class="address info">{{address}}</div>
+	<a class="info edit"><span class="edit-contact btn btn-info">Edit</span></a>
+	<a class="info delete"><span class="delete-contact btn btn-default">Delete</span></a>
+</script>
