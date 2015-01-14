@@ -57,8 +57,8 @@
 
 	function refreshInfo(){
 		var view = this;
-		view.$container.bEmpty();
-		groupDao.list().done(function(groupList){
+		view.$container.bEmpty();alert(1);
+		app.contactDao.list().done(function(groupList){
 			for(var i=0;i<groupList.length;i++){
 				var html = render("group-items",groupList[i]);
 				view.$container.append(html);

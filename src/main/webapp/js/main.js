@@ -7,23 +7,3 @@ function render(templateName,data){
   }
   return tmpl(data);
 }
-
-var main = main || {};
-(function(){
-
-  var defaultContact = [
-    {id:"01",name:"John",address:"john@gmail.com",groupId:"01"},
-    {id:"02",name:"Kim",address:"kim@gmail.com",groupId:"02"}
-  ];
-
-  var defaultGroups = [
-    {id:"01",title:"Inbox"},
-    {id:"02",title:"Important"}
-  ];
-
-  contactDao = brite.registerDao(new brite.InMemoryDaoHandler("Contact",defaultContact));
-
-  groupDao = brite.registerDao(new brite.InMemoryDaoHandler("Group",defaultGroups));
-
-
-})();

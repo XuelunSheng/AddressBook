@@ -1,9 +1,12 @@
 package com.example.addressBook.entity;
 
-public class Group {
+public class Group extends BaseEntity {
 
     private String name;
-    
+
+    public Group(String name){
+        this.name = name;
+    }
     
     public String getName() {
         return name;

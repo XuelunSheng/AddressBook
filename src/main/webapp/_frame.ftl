@@ -16,7 +16,8 @@
       <script type="text/javascript" src="${_r.contextPath}/js/main.js"></script>
       <script type="text/javascript" src="${_r.contextPath}/js/GroupPopupView.js"></script>
       <script type="text/javascript" src="${_r.contextPath}/js/ContactPopupView.js"></script>
-      <script type="text/javascript" src="${_r.contextPath}/js/brite.InMemoryDaoHandler.js"></script>
+      <script type="text/javascript" src="${_r.contextPath}/js/ContactDaoHandler.js"></script>
+      <script type="text/javascript" src="${_r.contextPath}/js/binding.js"></script>
       <script type="text/javascript" src="${_r.contextPath}/js/MainView.js"></script>
     
   </head>

@@ -6,7 +6,7 @@ public class Contact extends BaseEntity {
     private String address;
     
     public Contact(){};
-    
+
     public Contact(String name, String address){
         this.name = name;
         this.address = address;
