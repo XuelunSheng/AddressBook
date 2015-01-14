@@ -7,7 +7,7 @@
 	},
 	postDisplay: function(){
 		var view = this;
-		view.$content = view.$el.find(".MainView-content");
+		view.$container = view.$el.find(".content-container");
 		refreshInfo.call(view);
 	},
 	events : {
@@ -26,7 +26,7 @@
 		"click; .add-contact" : function(e){
 			var view = this;
 			var groupctn = $(e.currentTarget).closest(".group-ctn");
-			var groupId = groupctn.attr("data-entity-id") || "01";
+			var groupId = groupctn.attr("data-entity-id");
 			brite.display("ContactPopupView","body",{groupId:groupId});
 		},
 		"click; .delete-contact" : function(e){
@@ -57,17 +57,17 @@
 
 	function refreshInfo(){
 		var view = this;
-		view.$content.bEmpty();
+		view.$container.bEmpty();
 		groupDao.list().done(function(groupList){
 			for(var i=0;i<groupList.length;i++){
 				var html = render("group-items",groupList[i]);
-				view.$content.append(html);
+				view.$container.append(html);
 			}
 		});
 
 		contactDao.list().done(function(contactList){
 			for(var i=0;i<contactList.length;i++){
-				view.$content.find(".group-ctn").each(function(){
+				view.$container.find(".group-ctn").each(function(){
 					var groupId = $(this).attr("data-entity-id");
 					var $contactItem = $(this).find(".contact-info");
 					if(groupId == contactList[i].groupId){

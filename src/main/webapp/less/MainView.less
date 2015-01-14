@@ -15,11 +15,6 @@
 		.add-group{
 			position: absolute;
 			top: 15px;
-			right: 145px;
-		}
-		.add-contact{
-			position: absolute;
-			top: 15px;
 			right: 15px;
 		}
 	}
@@ -29,55 +24,64 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		.group-ctn{
-			.group-title{
-				height: 40px;
-				line-height: 40px;
-				font-size: 20px;
-				padding: 4px 0 4px 20px;
-				border-top: 1px #ccc solid;
-				background-color: #eee;
-				.add-contact{
-					float: right;
-					margin-top: 5px;
-					margin-right: 10px;
-					color: #FFF;
+		.content-container{
+			margin-top: 20px;
+			margin-left: 360px;
+			width: 600px;
+			.group-ctn{
+				border-left: 1px #ccc solid;
+				border-right: 1px #ccc solid;
+				&:last-child{
+					border-bottom: 1px #ccc solid;
 				}
-				.delete-group{
-					float: right;
-					margin-top: 5px;
-					margin-right: 16px;
-				}
-			}
-			.contact-title,.contact-info{
-				height: 60px;
-				text-align: center;
-				.info{
-					float: left;
+				.group-title{
+					height: 40px;
 					line-height: 40px;
-					padding: 5px 0 5px 0;
+					font-size: 20px;
+					padding: 4px 0 4px 20px;
 					border-top: 1px #ccc solid;
+					background-color: #eee;
+					.add-contact{
+						float: right;
+						margin-top: 5px;
+						margin-right: 10px;
+						color: #FFF;
+					}
+					.delete-group{
+						float: right;
+						margin-top: 5px;
+						margin-right: 16px;
+					}
 				}
-				.contactId{
-					width: 40px;
-				}
-				.contactName{
-					width: 160px;
-				}
-				.address{
-					width: 240px;
-				}
-				.edit{
-					width: 160px;
-					text-align: right;
-				}
-				.delete{
-					width: 160px;
-					height: 48px;
-					text-align: right;
-					border-right: 1px solid #ccc;
-					.btn{
-						margin-right: 15px;
+				.contact-title,.contact-info{
+					text-align: center;
+					.info{
+						line-height: 40px;
+						padding: 5px 0 5px 0;
+						border-top: 1px #ccc solid;
+					}
+					.contactId{
+						float: left;
+						width: 40px;
+					}
+					.contactName{
+						float: left;
+						width: 160px;
+					}
+					.address{
+						float: left;
+						width: 240px;
+					}
+					.edit{
+						float: left;
+						width: 80px;
+					}
+					.delete{
+						height: 40px;					
+						.btn{
+							display: block;
+							margin-top: 6px;
+						}
 					}
 				}
 			}

@@ -24,8 +24,7 @@
 					alert("Please enter something.");
 				}else{
 					if(view.groupId){
-						info.groupId = view.groupId;
-						contactDao.create(info).done(function(){
+						contactDao.create(view.groupId,info).done(function(){
 							view.$el.trigger("DO_REFRESH");
 							view.$el.remove();
 						});

@@ -15,7 +15,7 @@ import com.google.inject.Singleton;
 
 
 @Singleton
-public class ContactDaoWebHandlers {
+public class ContactWebHandlers {
 
     @Inject
     private ContactDao contactDao;
@@ -31,8 +31,8 @@ public class ContactDaoWebHandlers {
     }
 
     @WebActionHandler
-    public Contact daoContactCreate(@WebParam("firstName")String firstName, @WebParam("lastName")String lastName){
-       Contact contact = contactDao.create(new Contact(firstName,lastName));
+    public Contact daoContactCreate(@WebParam("name")String name, @WebParam("address")String address){
+       Contact contact = contactDao.create(new Contact(name,address));
        return contact;
                                
     }    

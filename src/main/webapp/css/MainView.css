@@ -17,11 +17,6 @@
 .MainView .MainView-nav .add-group {
   position: absolute;
   top: 15px;
-  right: 145px;
-}
-.MainView .MainView-nav .add-contact {
-  position: absolute;
-  top: 15px;
   right: 15px;
 }
 .MainView .MainView-content {
@@ -31,7 +26,19 @@
   right: 0;
   bottom: 0;
 }
-.MainView .MainView-content .group-ctn .group-title {
+.MainView .MainView-content .content-container {
+  margin-top: 20px;
+  margin-left: 360px;
+  width: 600px;
+}
+.MainView .MainView-content .content-container .group-ctn {
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+}
+.MainView .MainView-content .content-container .group-ctn:last-child {
+  border-bottom: 1px #ccc solid;
+}
+.MainView .MainView-content .content-container .group-ctn .group-title {
   height: 40px;
   line-height: 40px;
   font-size: 20px;
@@ -39,55 +46,54 @@
   border-top: 1px #ccc solid;
   background-color: #eee;
 }
-.MainView .MainView-content .group-ctn .group-title .add-contact {
+.MainView .MainView-content .content-container .group-ctn .group-title .add-contact {
   float: right;
   margin-top: 5px;
   margin-right: 10px;
   color: #FFF;
 }
-.MainView .MainView-content .group-ctn .group-title .delete-group {
+.MainView .MainView-content .content-container .group-ctn .group-title .delete-group {
   float: right;
   margin-top: 5px;
   margin-right: 16px;
 }
-.MainView .MainView-content .group-ctn .contact-title,
-.MainView .MainView-content .group-ctn .contact-info {
-  height: 60px;
+.MainView .MainView-content .content-container .group-ctn .contact-title,
+.MainView .MainView-content .content-container .group-ctn .contact-info {
   text-align: center;
 }
-.MainView .MainView-content .group-ctn .contact-title .info,
-.MainView .MainView-content .group-ctn .contact-info .info {
-  float: left;
+.MainView .MainView-content .content-container .group-ctn .contact-title .info,
+.MainView .MainView-content .content-container .group-ctn .contact-info .info {
   line-height: 40px;
   padding: 5px 0 5px 0;
   border-top: 1px #ccc solid;
 }
-.MainView .MainView-content .group-ctn .contact-title .contactId,
-.MainView .MainView-content .group-ctn .contact-info .contactId {
+.MainView .MainView-content .content-container .group-ctn .contact-title .contactId,
+.MainView .MainView-content .content-container .group-ctn .contact-info .contactId {
+  float: left;
   width: 40px;
 }
-.MainView .MainView-content .group-ctn .contact-title .contactName,
-.MainView .MainView-content .group-ctn .contact-info .contactName {
+.MainView .MainView-content .content-container .group-ctn .contact-title .contactName,
+.MainView .MainView-content .content-container .group-ctn .contact-info .contactName {
+  float: left;
   width: 160px;
 }
-.MainView .MainView-content .group-ctn .contact-title .address,
-.MainView .MainView-content .group-ctn .contact-info .address {
+.MainView .MainView-content .content-container .group-ctn .contact-title .address,
+.MainView .MainView-content .content-container .group-ctn .contact-info .address {
+  float: left;
   width: 240px;
 }
-.MainView .MainView-content .group-ctn .contact-title .edit,
-.MainView .MainView-content .group-ctn .contact-info .edit {
-  width: 160px;
-  text-align: right;
+.MainView .MainView-content .content-container .group-ctn .contact-title .edit,
+.MainView .MainView-content .content-container .group-ctn .contact-info .edit {
+  float: left;
+  width: 80px;
 }
-.MainView .MainView-content .group-ctn .contact-title .delete,
-.MainView .MainView-content .group-ctn .contact-info .delete {
-  width: 160px;
-  height: 48px;
-  text-align: right;
-  border-right: 1px solid #ccc;
+.MainView .MainView-content .content-container .group-ctn .contact-title .delete,
+.MainView .MainView-content .content-container .group-ctn .contact-info .delete {
+  height: 40px;
 }
-.MainView .MainView-content .group-ctn .contact-title .delete .btn,
-.MainView .MainView-content .group-ctn .contact-info .delete .btn {
-  margin-right: 15px;
+.MainView .MainView-content .content-container .group-ctn .contact-title .delete .btn,
+.MainView .MainView-content .content-container .group-ctn .contact-info .delete .btn {
+  display: block;
+  margin-top: 6px;
 }
 

@@ -13,17 +13,17 @@ import com.example.addressBook.dao.ContactDao;
 import com.example.addressBook.entity.Contact;
 
 @Singleton
-public class ContactPagesWebHandlers {
+public class GroupWebHandlers {
 
     @Inject
     private ContactDao contactDao;
-    
+
     @WebModelHandler(startsWith="/contacts")
     public void pageContacts(@WebModel Map m){
         List<Contact> contacts = contactDao.list();
         m.put("contactList",contacts);
     }
-    
+
     @WebModelHandler(startsWith="/contact")
     public void pageProfile(@WebModel Map m, @WebParam("id")Contact contact){
         m.put("contact", contact);
